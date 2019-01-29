@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Bank Account/title>
+    <title></title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Welcome to Epicodus Credit Union</h1>
+      <div id ="userInput">
+        <div class="row">
+          <div class="col-md-6 register">
+            <h2> Register a new account </h2>
+            <div class="form-group">
+              <label for="name">Name: </label>
+              <input id="name" type="text">
+            </div>
+            <div class="form-group">
+              <label for=initialDeposit>Initial Deposit: </label>
+              <input id="initialDeposit" type="number">
+            </div>
+            <button type="button" class="btn btn-primary" id="depositButton">Deposit</button>
+          </div>
+
+          <div class="col-md-6 deposit">
+            <h2> Deposit or withdraw funds: </h2>
+            <div class="form-group">
+              <label for="deposit">Deposit Amount: </label>
+              <input id="deposit" type="number">
+            </div>
+            <div class="form-group">
+              <label for=withdrawal>Withdrawal Amount: </label>
+              <input id="withdrawal" type="number">
+            </div>
+            <button type="button" class="btn btn-primary" id="goButton">Go</button>
+          </div>
+        </div>
+      </div>
+      <div id="balance">
+        <h3> Current Balance:</h3>
+        <p id="output"></p>
+      </div>
+    </div>
+  </body>
+</html>
